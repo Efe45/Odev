@@ -1,0 +1,41 @@
+
+#include <stdio.h>
+
+int main (void)
+{
+  // başlangıç boyutu istemi
+  int bas = 0;
+  do
+  {
+    printf("Başlangıçdaki hayvan sayısını giriniz");
+    scanf ( "%d", &bas );
+  }
+  while ( bas < 9 );
+  int bit = 0;
+  do
+  {
+    printf("Sondaki hayvan sayısını giriniz");
+    scanf ( "%d", &bit );
+  }
+  while ( bit < bas );
+
+  int yil = 0;
+
+  while (bas <= bit)
+  {
+
+      bas += (bas / 3) - (bas / 4 );
+
+      yil ++;
+     
+       if (bit <= bas)
+        {
+          break;
+        }
+      
+  }
+   printf("Yıl: %d",yil);
+
+
+}
+
