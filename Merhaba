@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    char isim[50];  
+    printf("Adınız ");
+    fgets(isim, sizeof(isim), stdin);  
+    printf("Merhaba,%s ", isim);
+  
+}
