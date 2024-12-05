@@ -3,7 +3,7 @@
 int main() {
 
     int a = 0;
-  int sayi;
+  
   do
   {
       printf("Yükseklik");
